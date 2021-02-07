@@ -1,13 +1,14 @@
-/////constants
+//Main Script for Portfolio
+//Created by Chase Trybula
+/////Constants
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-//routes 
+/////Routes 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-//
 /////
 
 var app = express();
