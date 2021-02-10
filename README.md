@@ -1,4 +1,4 @@
 NodeJS Website by Chase Trybula
 
 //to run
-npm start
+node ./bin/www
