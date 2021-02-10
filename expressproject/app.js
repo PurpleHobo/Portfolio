@@ -17,10 +17,18 @@ const contactRouter = require('./routes/contact');
 //Express Object
 const app = express();
 
+/////vars
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-app.use(logger('dev'));
+app.use(logger(function(tokens, req, res){
+    return[ //to desplay only url, status and responce time
+        tokens.url(req, res),
+        tokens.status(req, res),
+        tokens['response-time'](req, res), 'ms'
+    ]
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
