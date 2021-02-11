@@ -1,19 +1,30 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    block head
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        block head
 
-  body
-    header
-        block header
+    body
+        header
+            table#nav
+                tr
+                    th.name
+                        h2 &nbsp;&nbspChase Trybula
+                    th.redir
+                        h2 Home
+                    th.redir
+                        h2 About
+                    th.redir
+                        h2 Study&nbsp;
+                    th.redir
+                        h2 Contact
 
-    section
-        block section 
+        section
+            block section 
 
-    article
-        block article 
+        article
+            block article 
 
-    footer
-        block footer 
+        footer
+            block footer 

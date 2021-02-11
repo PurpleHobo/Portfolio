@@ -39,3 +39,16 @@ article {
 footer {
     background-color: #B1A296; 
 }
+
+#nav {
+    width=100%
+}
+.name {
+    text-align:left;
+    width:50%;
+}
+
+.redir {
+    text-align:right;
+    width:7.5%;
+}
