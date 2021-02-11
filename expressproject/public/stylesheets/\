@@ -1,7 +1,7 @@
 /*
 Color Scheme
 Dark Grey: #5D5C61
-Light Grey: #8C8C8C
+Light Grey: #379683
 Dark Blue: #557A95
 Light Blue: #7395AE
 Light Brown: #B1A296
@@ -16,11 +16,12 @@ body {
     background-size:cover;
     font: "Arial";
     display: grid;
-    grid-template-rows: 80px auto auto auto;
+    grid-template-rows: 80px auto auto 15px auto;
     grid-template-areas:
         "header"
         "section"
         "article"
+        "."
         "footer"
 }
 
@@ -33,7 +34,7 @@ section {
 }
 
 article {
-    background-color: #8c8c8c;
+    background-color: #379683;
 }
 
 footer {
