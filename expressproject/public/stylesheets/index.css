@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "section" "aside"
+}
+
+aside {
+    background-color: #FC4445;
+    height : 100%;
+}
+
+section {
+   background-color: #3FEEE6;
+}
+.fill {
+    box-sizing:border-box;
+    width : 100%;
+    height : 100%;
+    border: 2em solid #FC4445; 
+    padding:0px;
+}
+
+.split{
+    height : 3%;
+}
+
+.third{
+    height : 31.33%;
+}
+
+.inav {
+    background-color: #FC4445;
+    width : 100%;
+    height : 100%;
+    padding: 6px 0px;
+    border: 10px solid #3FEEE6; 
+    color : #3FEEE6;
+    text-align:center;
+    font-size:2em;
+}

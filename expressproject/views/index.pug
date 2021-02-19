@@ -1,5 +1,24 @@
 extends layout
 
+block head
+    link(rel='stylesheet', href='/stylesheets/index.css')
 block section 
-  h1= title
-  p Welcome to #{title}
+    div.mTitle
+        h1 chase
+        h1 trybula 
+block aside
+    div.fill
+        div.third
+            a(href = "/about")
+                button.inav
+                    h1 About
+        div.split
+        div.third
+            a(href = "/education")
+                button.inav
+                    h1 Education
+        div.split
+        div.third
+            a(href = "/contact")
+                button.inav
+                    h1 Contact

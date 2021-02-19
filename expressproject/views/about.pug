@@ -1,0 +1,28 @@
+extends layout
+
+block head
+    link(rel='stylesheet', href='/stylesheets/about.css')
+block header 
+    table#nav
+        tr
+            th.name
+                a(href="/")
+                    h2.name &nbsp;&nbspChase Trybula
+            th.redir
+                a(href="/about")
+                    - if (title=="About")
+                        h2(style="color:#EE4C7C;") About&nbsp
+                    - if (title != "About")
+                        h2 About&nbsp
+            th.redir
+                a(href="/education")
+                    - if (title=="Education")
+                        h2(style="color:#EE4C7C;") Education&nbsp
+                    - if (title!="Education")
+                        h2 Education&nbsp
+            th.redir
+                a(href="/contact")
+                    - if (title=="Contact")
+                        h2(style="color:#EE4C7C;") Contact&nbsp 
+                    - if (title!="Contact")
+                        h2 Contact&nbsp

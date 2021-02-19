@@ -6,25 +6,20 @@ html
         block head
 
     body
-        header
-            table#nav
-                tr
-                    th.name
-                        h2 &nbsp;&nbspChase Trybula
-                    th.redir
-                        h2 Home
-                    th.redir
-                        h2 About
-                    th.redir
-                        h2 Study&nbsp;
-                    th.redir
-                        h2 Contact
+        - if (title=="index")
+            section
+                block section 
+            aside
+                block aside
+        - if (title != "index")
+            header
+                block header
+            section
+                block section 
+            aside
+                block aside
+            article
+                block article
+            footer
+                block footer
 
-        section
-            block section 
-
-        article
-            block article 
-
-        footer
-            block footer 
